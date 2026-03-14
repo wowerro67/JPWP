@@ -1,16 +1,19 @@
+from functools import reduce # Ta biblioteka przyda Ci się do rozwiązania!
+
 prices = [10, 20, 30.5, 15]
 total = 0
 
+# Podejście imperatywne: pętla modyfikująca stan zmiennej total
 for price in prices:
     total += price
     
-print(total) # 75.5
+print("Suma imperatywna:", total) # 75.5
 
-from functools import reduce
+# ==========================================
+# TODO: Zrefaktoryzuj powyższy kod na styl funkcyjny!
+# 1. Pozbądź się pętli 'for' oraz zmiennej akumulującej 'total'.
+# 2. Użyj funkcji reduce() zaimportowanej na górze pliku.
+# 3. Zastosuj wyrażenie 'lambda' do zsumowania elementów listy.
+# ==========================================
 
-prices = [10, 20, 30.5, 15]
-
-# Użycie reduce i wyrażenia lambda do "zredukowania" listy do jednej wartości
-total = reduce(lambda current_sum, price: current_sum + price, prices, 0)
-
-print(total) # 75.5
+# Tutaj wpisz swój kod funkcyjny:
