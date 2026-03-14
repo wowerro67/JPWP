@@ -9,15 +9,13 @@ for user in users:
     if user["is_active"]:
         active_user_names.append(user["name"])
         
-print(active_user_names) # ['Anna', 'Maria']
+print("Wynik imperatywny:", active_user_names) # ['Anna', 'Maria']
 
+# ==========================================
+# TODO: Zrefaktoryzuj powyższy kod na styl funkcyjny!
+# 1. Pozbądź się pętli 'for' oraz instrukcji 'if'.
+# 2. Użyj wbudowanych funkcji: map() oraz filter().
+# 3. Zastosuj wyrażenia 'lambda'.
+# ==========================================
 
-# Podejście ściśle funkcyjne (złożenie funkcji)
-active_user_names = list(
-    map(lambda user: user["name"], 
-        filter(lambda user: user["is_active"], users))
-)
-
-print(active_user_names) # ['Anna', 'Maria']
-
-#Uwaga dla prowadzących:** W Pythonie częstszą i bardziej "pythoniczną" alternatywą dla tego łańcucha jest tzw. *list comprehension* (`[user["name"] for user in users if user["is_active"]]`), które również ma charakter deklaratywny. Warto o tym wspomnieć jako o ciekawostce!
+# Tutaj wpisz swój kod funkcyjny:
