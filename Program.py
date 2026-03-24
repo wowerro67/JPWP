@@ -21,10 +21,10 @@ def geometric_seq(a1, q, n):
 
 
 def get_analysis(limit, divisor):
-    """
-    Czysta transformacja danych (Pure Function):
-    Wynik zależy wyłącznie od argumentów wejściowych, brak efektów ubocznych.
-    """
+
+    #Czysta transformacja danych (Pure Function):
+    #Wynik zależy wyłącznie od argumentów wejściowych, brak efektów ubocznych.
+
 
     # 1. Tworzenie źródła danych:
     # Generujemy niemutowalny zakres liczb od 1 do limit.
